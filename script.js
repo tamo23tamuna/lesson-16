@@ -35,9 +35,9 @@ form.addEventListener("submit", function(event){
     input.value = " ";
 
 // remove item
-    let buttonRemove = document.createElement("button");
-    buttonRemove.textContent = "remove";
-    buttonRemove.classList.add("margin");
+    let buttonRemove = document.createElement("i");
+    buttonRemove.classList.add("margin", "fa-solid", "fa-delete-left");
+
     li.appendChild(buttonRemove);
     buttonRemove.addEventListener("click", function(){
         li.remove();
